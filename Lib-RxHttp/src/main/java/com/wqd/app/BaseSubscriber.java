@@ -1,6 +1,8 @@
 package com.wqd.app;
 
 import android.app.Activity;
+import android.content.Context;
+
 import rx.Subscriber;
 
 /**
@@ -8,9 +10,9 @@ import rx.Subscriber;
  */
 
 public abstract class BaseSubscriber<T> extends Subscriber<T> {
-    public Activity context;
+    public Context context;
 
-    public BaseSubscriber(Activity context) {
+    public BaseSubscriber(Context context) {
         this.context = context;
     }
 
